@@ -6,7 +6,7 @@ function trocarImagem(){
     const image = document.getElementById('image').value
     const imagemEscolhida = image.replace(' ', '-')
 
-    document.documentElement.style.setProperty('--imagem-fundo', `var(--${imagemEscolhida}`)
+    document.documentElement.style.setProperty('--imagem-fundo', `var(--${imagemEscolhida})`)
 }
 
 botaoTrocarImagem.addEventListener('click', trocarImagem)
@@ -19,9 +19,9 @@ let animationOn = false
 function ligarCarrossel(){
     animationOn = !animationOn
 
-    containerCentral.classList.toggle('carrossel-ativo')
+    containerCentral.classList.toggle('animacao-ativo')
 
-    if (containerCentral.contains('carrossel-ativo')){
+    if (containerCentral.classList.contains('animacao-ativo')){
         botaoAutoTroca.textContent = 'Parar animação ativa'
     } else {
         botaoAutoTroca.textContent = 'Iniciar animação.'
