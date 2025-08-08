@@ -9,8 +9,23 @@ function trocarImagem(){
     document.documentElement.style.setProperty('--imagem-fundo', `var(--${imagemEscolhida}`)
 }
 
-function trocaAutomatica(){
+botaoTrocarImagem.addEventListener('click', trocarImagem)
 
+const containerCentral = document.querySelector('.tela-principal');
+const botaoAutoTroca = document.getElementById('troca-automatica');
+
+let animationOn = false
+
+function ligarCarrossel(){
+    animationOn = !animationOn
+
+    containerCentral.classList.toggle('carrossel-ativo')
+
+    if (containerCentral.contains('carrossel-ativo')){
+        botaoAutoTroca.textContent = 'Parar animação ativa'
+    } else {
+        botaoAutoTroca.textContent = 'Iniciar animação.'
+    }
 }
 
-botaoTrocarImagem.addEventListener('click', trocarImagem)
+botaoAutoTroca.addEventListener('click', ligarCarrossel)

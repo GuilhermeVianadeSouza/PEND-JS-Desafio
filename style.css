@@ -50,3 +50,16 @@ body {
     width: 300px;
     height: 100px;
 }
+
+.carrossel-ativo {
+    animation: slider-automatico 35s infinite linear;
+}
+@keyframes carrossel-automatico{
+    0%, 13% {background-image: var(--imagem-1);}
+    14%, 27% {background-image: var(--imagem-2);}
+    28%, 41% {background-image: var(--imagem-3);}
+    42%, 55% {background-image: var(--imagem-4);}
+    56%, 69% {background-image: var(--imagem-5);}
+    70%, 83% {background-image: var(--imagem-6);}
+    84%, 100% {background-image: var(--imagem-7);}
+}
