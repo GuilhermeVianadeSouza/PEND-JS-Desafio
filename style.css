@@ -12,6 +12,7 @@
     --imagem-5: url("./img/fiora.jpeg");
     --imagem-6: url("./img/aatrox.jpeg");
     --imagem-7: url("./img/renekton-mech.webp");
+    --imagem-fundo: var(--imagem-1);
 }
 
 body {
@@ -22,7 +23,10 @@ body {
 
 .tela-principal {
     height: 600px;
-    background: image-set(var(--imagem-3));
+    background: image-set(var(--imagem-fundo));
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .container-geral {
