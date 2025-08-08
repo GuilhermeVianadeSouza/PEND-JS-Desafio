@@ -22,7 +22,11 @@ body {
 }
 
 .tela-principal {
-    height: 600px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 16px #000;
+    margin-bottom: 16px;
     background: image-set(var(--imagem-fundo));
     background-position: center;
     background-size: 100%;
