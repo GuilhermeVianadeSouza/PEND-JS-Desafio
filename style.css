@@ -5,18 +5,24 @@
 }
 
 :root {
-    --imagem-fundo: "./img/riven.jpeg";
+    --imagem-1: url("./img/riven.jpeg");
+    --imagem-2: url("./img/renekton.jpeg");
+    --imagem-3: url("./img/mordekaiser.gif");
+    --imagem-4: url("./img/jax.jpeg");
+    --imagem-5: url("./img/fiora.jpeg");
+    --imagem-6: url("./img/aatrox.jpeg");
+    --imagem-7: url("./img/renekton-mech.webp");
 }
 
 body {
     display: grid;
     place-content: center;
-    transition: 3s;
     height: 100dvh;
 }
 
 .tela-principal {
-    background: image-set(var(--imagem-fundo));
+    height: 600px;
+    background: image-set(var(--imagem-3));
 }
 
 .container-geral {
